@@ -1,7 +1,6 @@
 // Function to verify badge criteria
 async function verifyBadge(imagePath) {
     // Code to load the image and perform verifications goes here
-    
     const image = await loadImage(imagePath);
     const sizeCondition = image.width === 512 && image.height === 512;
     const circleCondition = verifyCircle(image);
